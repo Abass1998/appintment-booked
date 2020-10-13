@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+.top-wrapper {
+  border: 1px solid #eaf6f6;
+
+  /*background-color: #eaf6f6;*/
+
+  margin: 0 auto;
+}
+.nav {
+  border-bottom: 1px solid #eaeaeb;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+}
+.menu {
+  margin: 0 50px 0 0;
+}
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: black;
+  margin: 0 20px;
+  line-height: 50px;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 50x;
+  display: none;
+  width: 26px;
+  float: right;
+}
+#toggle {
+  display: none;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid whitesmoke;
+  width: 40%;
+  padding: 6rem;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.doctor-image img {
+  /*border: 1px solid pink;*/
+  border-radius: 50rem;
+}
+.wrapper-2 {
+  /*border: 1px solid yellow;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper-3 {
+  display: flex;
+}
+.view-profile a {
+  text-decoration: none;
+}
+.checked i {
+  /*border: 2px solid green;*/
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: green;
+}
+.appointment-booked {
+  width: 50%;
+  color: #070647;
+  /*border: 2px solid red;*/
+
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+.warning {
+  width: 80%;
+  /* border: 1px solid yellow;*/
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.footer {
+  /* border: 1px solid green;*/
+  display: flex;
+
+  width: 27%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.alice-walton {
+  font-size: 20px;
+  font-weight: bold;
+}
+.time {
+  color: green;
+}
+@media screen and (max-width: 900px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+  .menu a {
+    border-bottom: 1px solid white;
+    display: block;
+    position: relative;
+    clear: right;
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+    line-height: 50px;
+    width: 70%;
+    background-color: #2fa5a9;
+  }
+  .menu a:hover {
+    border: 2px solid white;
+    border-radius: 0;
+    padding: 5px;
+  }
+  .logo img {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid green;*/
+    width: 80%;
+    height: 50vh;
+    padding: 2rem;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .wrapper-2 {
+    /*border: 1px solid yellow;*/
+    width: 80%;
+
+    display: flex;
+    height: 20vh;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .wrapper-3 {
+    display: flex;
+    justify-content: center;
+  }
+  .doctor-image img {
+    /* border: 1px solid pink;*/
+    border-radius: 50rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+  .appointment-booked {
+    width: auto;
+    /*border: 2px solid red;*/
+
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0 auto;
+  }
+  .warning {
+    width: auto;
+    /*border: 1px solid yellow;*/
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer {
+    /*border: 1px solid green;*/
+    display: flex;
+
+    width: 80%;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 680px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid green;*/
+    width: 80%;
+    height: auto;
+    padding: 2rem;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .wrapper-2 {
+    /* border: 1px solid yellow;*/
+    width: 80%;
+
+    display: flex;
+    height: 20vh;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .appointment-booked {
+    width: auto;
+    /* border: 2px solid red;*/
+
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+  .warning {
+    width: auto;
+    /*border: 1px solid yellow;*/
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer {
+    /* border: 1px solid green;*/
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+  .footer {
+    /*border: 1px solid green;*/
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+  .wrapper {
+    display: flex;
+
+    justify-content: space-between;
+    /* border: 2px solid green;*/
+    width: 40%;
+    height: auto;
+    padding: 2rem;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .appointment-booked {
+    width: auto;
+    /* border: 2px solid red;*/
+
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+}
